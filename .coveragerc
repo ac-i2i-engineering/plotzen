@@ -1,0 +1,8 @@
+[run]
+source = MatPlus
+omit = 
+    */__init__.py
+
+[report]
+# Display missing lines in the terminal output
+show_missing = True
