@@ -2,7 +2,7 @@ import matplotlib.pyplot as plt
 import numpy as np
 import scatterplot
 import linegraph
-import bar
+import baro
 
 class Plot:
     def Plot(type, x, y, lowerlimx, lowerlimy, upperlimx, upperlimy, sizes = [], colors = [], vmin = 0, vmax = 0, width = 1):
@@ -12,7 +12,7 @@ class Plot:
         if type == "multi-line":
             linegraph.line.run(x, y, lowerlimx, lowerlimy, upperlimx, upperlimy, width)
         if type == "bar":
-            bar.easybar(x, y, upperlimx, upperlimy, width)
+            baro.easybar(x, y, upperlimx, upperlimy, width)
 
 # make the data
 x = 4 + np.random.normal(0, 2, 24)
